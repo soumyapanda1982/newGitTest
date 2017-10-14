@@ -28,10 +28,11 @@ class Customer(object):
         return self.balance
 	
 
-    def acccounttype(self, actype):
+    def acccounttype(self, accounttype, pan):
 	"""Return the account type i.e savings or current"""
-	self.actype = actype
-	return self.actype
+	self.actype = accounttype
+	self.pan = pan
+	return self.accounttype
 
 
 

@@ -26,6 +26,12 @@ class Customer(object):
         dollars."""
         self.balance += amount
         return self.balance
+	
+
+    def acccounttype(self, actype):
+	"""Return the account type i.e savings or current"""
+	self.actype = actype
+	return self.actype
 
 
 

@@ -26,7 +26,11 @@ class Customer(object):
         dollars."""
         self.balance += amount
         return self.balance
-	
+
+    def resetAccount(self, name):
+	if self.name == name:
+		self.balance = 0.0
+	return self.balance	
 
     def acccounttype(self, accounttype, pan):
 	"""Return the account type i.e savings or current"""
